@@ -1,6 +1,6 @@
-# Swastik Dairy
+# Anant Dairy
 
-Official website for Swastik Dairy — a dairy farm business.
+Official website for Anant Dairy — a dairy farm business.
 
 ## Features
 - Product showcase

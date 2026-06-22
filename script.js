@@ -1,7 +1,7 @@
 // Central config for WhatsApp details (easy to update later).
 const CONFIG = {
   whatsappNumber: "7985499394",
-  defaultOrderMessage: "Hello Swastik Dairy, I want to order fresh milk."
+  defaultOrderMessage: "Hello Anant Dairy, I want to order fresh milk."
 };
 
 const siteHeader = document.querySelector(".site-header");
@@ -68,7 +68,7 @@ function setLanguage(lang) {
     button.classList.toggle("active", button.dataset.lang === lang);
   });
 
-  localStorage.setItem("swastik_lang", lang);
+  localStorage.setItem("anant_lang", lang);
 }
 
 function getCurrentLang() {
@@ -77,7 +77,7 @@ function getCurrentLang() {
 
 function getOrderMessage(data, lang) {
   if (lang === "hi") {
-    return `नमस्ते स्वास्तिक डेयरी,
+    return `नमस्ते अनंत डेयरी,
 मुझे दूध का ऑर्डर देना है।
 
 नाम: ${data.name}
@@ -87,7 +87,7 @@ function getOrderMessage(data, lang) {
 अतिरिक्त जानकारी: ${data.notes || "कोई नहीं"}`;
   }
 
-  return `Hello Swastik Dairy,
+  return `Hello Anant Dairy,
 I would like to place a milk order request.
 
 Name: ${data.name}
@@ -506,7 +506,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Initialize language + links on first load.
-const savedLang = localStorage.getItem("swastik_lang");
+const savedLang = localStorage.getItem("anant_lang");
 const initialLang = savedLang === "hi" ? "hi" : "en";
 setLanguage(initialLang);
 updateStaticWhatsappLinks();
