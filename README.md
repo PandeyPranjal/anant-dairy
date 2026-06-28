@@ -11,7 +11,7 @@ Official website for Anant Dairy — a dairy farm business.
 HTML5, CSS3, JavaScript
 
 ## Live site
-[https://swastikdairy.netlify.app/]
+[https://anantfarm.netlify.app/]
 
 ## Setup
 1. Clone this repo
